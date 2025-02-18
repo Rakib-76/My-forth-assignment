@@ -17,8 +17,8 @@ function  electionResult( votes) {
             }
         }
         if(mangoes.length > bananas.length){
-            let man = mangoes[0];
-            return man;
+            let mango = mangoes[0];
+            return mango;
         }
       
         
