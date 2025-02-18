@@ -1,19 +1,19 @@
-function  electionResult( fruits) {
+function  electionResult( votes) {
     let mangoes = [];
     let bananas = [];
-    if(!Array.isArray(fruits)){
+    if(!Array.isArray(votes)){
         return "Invalid";
     }
-    for(let i=0; i < fruits.length; i++){
-        if(fruits[i] === "mango"){
-            mangoes.push(fruits[i]);
+    for(let i=0; i < votes.length; i++){
+        if(votes[i] === "mango"){
+            mangoes.push(votes[i]);
         }
     }
 
 
-        for(let i=0; i < fruits.length; i++){
-            if(fruits[i] === "banana"){
-                bananas.push(fruits[i]);
+        for(let i=0; i < votes.length; i++){
+            if(votes[i] === "banana"){
+                bananas.push(votes[i]);
             }
         }
         if(mangoes.length > bananas.length){
@@ -35,6 +35,6 @@ function  electionResult( fruits) {
         // console.log(bananas);
 
 }
-const result = electionResult(["mango","mango","mang", "lichi","banana","banana","banana"]);
+const result = electionResult(["mango","mango","mango", "lichi","banana","banana","banan"]);
 // const result =electionResult("kola");
 console.log("The winner is :", result);
