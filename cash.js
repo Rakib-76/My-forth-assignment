@@ -1,5 +1,8 @@
 function cashOut(money){
-        const chargeMoney = '1.75%';
+        if(isNaN(money) || money <= 0){
+                return "Invalid";
+        }
+        
         const cashOutAmount = money*1.75/100;
         return cashOutAmount;
 
